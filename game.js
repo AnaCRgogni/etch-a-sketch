@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    createGrid(30); // Initialize with a 30x30 grid
+    createGrid(10); // Initialize with a 10x10 grid
 
     // Event listener to change cell color
     gridDiv.addEventListener("click", function(event) {
