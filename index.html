@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,19 +8,26 @@
     <link rel="stylesheet" href="game.css">
 </head>
 <body>
-    <!-- <div class="container">
-        <h1>🐱 Etch-a-Sketch! 🐱</h1>
-        <p id="instructions">***</p>
-        <div class="buttons">
-            <button class="choice" id="rock">✊</button>
-            <button class="choice" id="paper">✋</button>
-            <button class="choice" id="scissors">✌️</button>
+    <div class="game-container">
+        <h1>Etch-a-Sketch!</h1>
+        <p>Click on the cells to change their color. Use the input below to adjust the grid size (max 30). You can also select a color to paint with!</p>
+
+        <label for="gridSize">Grid Size:</label>
+        <input type="number" id="gridSize" min="1" max="30" value="30">
+        <button id="generateGrid">Generate Grid</button>
+
+        <div class="container"></div>
+
+        <div class="color-buttons">
+            <button class="color-btn" style="background-color: red;"></button>
+            <button class="color-btn" style="background-color: green;"></button>
+            <button class="color-btn" style="background-color: blue;"></button>
+            <button class="color-btn" style="background-color: yellow;"></button>
+            <button class="color-btn" style="background-color: purple;"></button>
+            <button class="color-btn" style="background-color: orange;"></button>
+            <button class="color-btn" style="background-color: pink;"></button>
+            <button class="color-btn" style="background-color: brown;"></button>
         </div>
-        <div id="score">Score - You: 0 | Computer: 0</div>
-        <div id="result"></div>
-        <div class="cute-icons">
-            <img src="cat2.png" alt="Cute Cat">
-        </div>
-    </div> -->
+    </div>
 </body>
 </html>
