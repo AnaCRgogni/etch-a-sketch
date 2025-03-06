@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const gridSizeInput = document.querySelector("#gridSize");
     const generateGridBtn = document.querySelector("#generateGrid");
     const colorButtons = document.querySelectorAll(".color-btn");
-    let currentColor = "blue"; // Default color
-    
+    let currentColor = "blue"; 
+
     function createGrid(size) {
-        gridDiv.innerHTML = ''; // Clear previous grid
+        gridDiv.innerHTML = '';
         for (let i = 0; i < size; i++) {
             const row = document.createElement("div");
             row.style.display = "flex";
@@ -19,16 +19,14 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    createGrid(10); // Initialize with a 10x10 grid
+    createGrid(10); 
 
-    // Event listener to change cell color
     gridDiv.addEventListener("click", function(event) {
         if (event.target.classList.contains("cell")) {
             event.target.style.backgroundColor = currentColor;
         }
     });
 
-    // Button to regenerate the grid with the new size
     generateGridBtn.addEventListener("click", function() {
         const newSize = parseInt(gridSizeInput.value);
         if (newSize > 30) {
@@ -43,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // Color selection buttons
     colorButtons.forEach(function(button) {
         button.addEventListener("click", function() {
             currentColor = button.style.backgroundColor;
